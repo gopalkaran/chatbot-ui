@@ -1,0 +1,68 @@
+.chat-window{
+    margin-top: 2rem;
+    height: 90vh;
+    width: 30vw;
+    display: grid;
+    grid-template-columns: 1fr 27vw 1fr;
+    grid-template-rows: 28vh 5rem 44vh;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 5px #E5E7EB;
+
+}
+
+.section-one{
+   background-color: #ff8c00;
+   grid-column: 1/4;
+   grid-row: 1/3;
+   border-top-left-radius: 1rem;
+   border-top-right-radius: 1rem;
+}
+
+.section-two{
+   background-color: white;
+   grid-column: 2/3;
+   grid-row: 2/4;
+   border-radius: 0.5rem;
+   border: 0.1rem solid #E5E7EB;
+   position: relative;
+}
+
+.section-two .robot-container{
+    background-color: #ff8c00;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #D1D5DB;
+    position: absolute;
+    top: -2rem;
+    left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-two .robot-container svg{
+    transform: scale(1.5);
+}
+
+.section-two > p{
+    margin-top: 2rem;
+}
+
+.section-two > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    
+}
+
+.section-two > ul li{
+   border: 0.1rem solid #E5E7EB;
+   border-radius: 0.5rem;
+   padding: 0.8rem;
+   font-size: 0.8rem;
+   text-align: left;
+   width: 90%;
+}
+
