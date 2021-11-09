@@ -1,10 +1,10 @@
 .chat-window{
     margin-top: 2rem;
-    height: 90vh;
-    width: 30vw;
+    height: 35rem;
+    width: 25rem;
     display: grid;
-    grid-template-columns: 1fr 28vw 1fr;
-    grid-template-rows: 28vh 5rem 44vh;
+    grid-template-columns: 1fr 23rem 1fr;
+    grid-template-rows: 11.5rem 4.5rem 17rem;
     border-radius: 1rem;
     box-shadow: 0 0 10px 5px #E5E7EB;
 
@@ -57,7 +57,7 @@
     height: 3.5rem;
     width: 3.5rem;
     border-radius: 50%;
-    box-shadow: 0 0 10px #BA4A00;
+    box-shadow: 0 0 10px #D35400;
     position: absolute;
     top: -2rem;
     left: 1rem;
@@ -110,6 +110,18 @@
    width: 90%;
    cursor: pointer;
 }
+
+/* .section-two > ul li .outside{
+    height: 1rem;
+    width: 1rem;
+    background-color: red;
+}
+
+.section-two > ul li .inside{
+    height: 1rem;
+    width: 1rem;
+    background-color: blue;
+} */
 
 
 .section-two .conversation {

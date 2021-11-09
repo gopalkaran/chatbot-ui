@@ -69,10 +69,10 @@ const Chatbot = () => {
           </span>
         </p>
         <ul>
-          <li>Can I redeem my FB before the original term?</li>
-          <li>How do I pay my Credit card bill?</li>
-          <li>How can I get my Account Statement?</li>
-          <li>What is the tenure of Fixed Depotsit?</li>
+          <li><span className="outside"><span className="inside"></span></span>Can I redeem my FB before the original term?</li>
+          <li><span className="outside"><span className="inside"></span></span>How do I pay my Credit card bill?</li>
+          <li><span className="outside"><span className="inside"></span></span>How can I get my Account Statement?</li>
+          <li><span className="outside"><span className="inside"></span></span>What is the tenure of Fixed Depotsit?</li>
         </ul>
         <button className="conversation">
           <span>
