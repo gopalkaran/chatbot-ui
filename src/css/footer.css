@@ -1,0 +1,18 @@
+footer{
+    background-color: #ff8c00;
+    padding: 2rem;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 0.5rem;
+}
+
+footer div svg{
+    fill: white;
+}

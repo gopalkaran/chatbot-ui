@@ -1,12 +1,26 @@
 import React from "react";
 import "../css/chatbot.css";
 
-const Chatbot = () => {
+const Chatbot = ({ toggleWindow }) => {
   return (
     <div className="chat-window">
       <section className="section-one">
         <div className="container">
-          <h2>IRIS</h2>
+          <h2>
+            IRIS
+            <span onClick={toggleWindow}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#000000"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+              </svg>
+            </span>
+          </h2>
           <h3>
             Hello
             <span>
@@ -69,10 +83,30 @@ const Chatbot = () => {
           </span>
         </p>
         <ul>
-          <li><span className="outside"><span className="inside"></span></span>Can I redeem my FB before the original term?</li>
-          <li><span className="outside"><span className="inside"></span></span>How do I pay my Credit card bill?</li>
-          <li><span className="outside"><span className="inside"></span></span>How can I get my Account Statement?</li>
-          <li><span className="outside"><span className="inside"></span></span>What is the tenure of Fixed Depotsit?</li>
+          <li>
+            <span className="outside">
+              <span className="inside"></span>
+            </span>
+            Can I redeem my FB before the original term?
+          </li>
+          <li>
+            <span className="outside">
+              <span className="inside"></span>
+            </span>
+            How do I pay my Credit card bill?
+          </li>
+          <li>
+            <span className="outside">
+              <span className="inside"></span>
+            </span>
+            How can I get my Account Statement?
+          </li>
+          <li>
+            <span className="outside">
+              <span className="inside"></span>
+            </span>
+            What is the tenure of Fixed Depotsit?
+          </li>
         </ul>
         <button className="conversation">
           <span>

@@ -1,5 +1,5 @@
 .chat-window{
-    margin-top: 2rem;
+    /* margin: 2rem auto 2rem auto; */
     height: 35rem;
     width: 25rem;
     display: grid;
@@ -7,7 +7,9 @@
     grid-template-rows: 11.5rem 4.5rem 17rem;
     border-radius: 1rem;
     box-shadow: 0 0 10px 5px #E5E7EB;
-
+    position: fixed;
+    bottom: 0;
+    right: 2rem;
 }
 
 .section-one{
@@ -30,6 +32,30 @@
 
 .container h2{
     margin: 0.6rem 0 0.6rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container h2 span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.container h2 span:hover{
+    background-color: #eb8303;
+    transition: background-color 500ms ease-in;
+}
+
+.container h2 svg{
+    fill: white;
 }
 
 .container h3{

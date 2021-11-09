@@ -1,11 +1,22 @@
-import React from "react";
+import React, {useState} from "react";
 import './App.css';
 import Chatbot from "./mycomponent/Chatbot";
+import ChatbotInactive from "./mycomponent/ChatbotInactive";
+import Header from "./mycomponent/Header";
 
 function App() {
+  const [window, setWindow] = useState(false);
+
+  const toggleWindow = () =>{
+    setWindow(window => !window);
+  }
   return (
     <div className="App">
-       <Chatbot />
+       <Header />
+       { window ?
+       <Chatbot toggleWindow={toggleWindow} /> :
+       <ChatbotInactive toggleWindow={toggleWindow} />
+      }
     </div>
   );
 }

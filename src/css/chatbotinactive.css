@@ -1,0 +1,15 @@
+.chat-inactive{
+    background-color: #ff8c00;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 25rem;
+    height: 2.5rem;
+    position: fixed;
+    bottom: 0;
+    right: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
