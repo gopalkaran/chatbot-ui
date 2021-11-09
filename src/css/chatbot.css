@@ -3,7 +3,7 @@
     height: 90vh;
     width: 30vw;
     display: grid;
-    grid-template-columns: 1fr 27vw 1fr;
+    grid-template-columns: 1fr 28vw 1fr;
     grid-template-rows: 28vh 5rem 44vh;
     border-radius: 1rem;
     box-shadow: 0 0 10px 5px #E5E7EB;
@@ -16,6 +16,24 @@
    grid-row: 1/3;
    border-top-left-radius: 1rem;
    border-top-right-radius: 1rem;
+   color: white;
+}
+
+.section-one .container{
+   /* background-color: aqua; */
+   width: 70%;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.container h2{
+    margin: 0.6rem 0 0.6rem 0;
+}
+
+.container h3{
+    margin: 0 0 0.6rem 0;
 }
 
 .section-two{
@@ -29,10 +47,10 @@
 
 .section-two .robot-container{
     background-color: #ff8c00;
-    height: 4rem;
-    width: 4rem;
+    height: 3.5rem;
+    width: 3.5rem;
     border-radius: 50%;
-    box-shadow: 0 0 5px #D1D5DB;
+    box-shadow: 0 0 10px #BA4A00;
     position: absolute;
     top: -2rem;
     left: 1rem;
@@ -41,11 +59,30 @@
     align-items: center;
 }
 .section-two .robot-container svg{
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 
 .section-two > p{
-    margin-top: 2rem;
+    margin: 2rem auto 1rem auto;
+    text-align: left;
+    width: 90%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #4B5563;
+}
+
+.section-two > p span{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: #FED8B1;
+}
+
+.section-two > p svg{
+    fill: #ff8c00;
+    transform: scale(0.8);
 }
 
 .section-two > ul{
@@ -60,9 +97,31 @@
 .section-two > ul li{
    border: 0.1rem solid #E5E7EB;
    border-radius: 0.5rem;
-   padding: 0.8rem;
-   font-size: 0.8rem;
+   padding: 0.7rem;
+   font-size: 0.7rem;
    text-align: left;
    width: 90%;
+   cursor: pointer;
 }
 
+
+.section-two .conversation {
+   padding: 0.5rem;
+   background-color: white;
+   border-radius: 5rem;
+   width: 70%;
+   border: 1px solid #D1D5DB;
+   box-shadow: 0 5px 10px #D1D5DB;
+   margin: 1rem auto 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 0.2rem;
+   color: #4B5563;
+   cursor: pointer;
+}
+
+.conversation svg{
+    transform: scale(0.7);
+    fill: #4B5563;
+}

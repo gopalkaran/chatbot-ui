@@ -5,10 +5,12 @@ const Chatbot = () => {
   return (
     <div className="chat-window">
       <section className="section-one">
-        <h3>IRIS</h3>
-        <h4>Hello</h4>
+        <div className="container">
+        <h2>IRIS</h2>
+        <h3>Hello</h3>
         <p>I am Iris, a Virtual Assistant</p>
         <p>How may I help you?</p>
+        </div>
       </section>
 
       <section className="section-two">
@@ -31,14 +33,47 @@ const Chatbot = () => {
             </g>
           </svg>
         </div>
-        <p>Frequently Asked Questions ?</p>
+        <p>
+          Frequently Asked Questions
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              enable-background="new 0 0 24 24"
+              height="24px"
+              viewBox="0 0 24 24"
+              width="24px"
+              fill="#000000"
+            >
+              <g>
+                <rect fill="none" height="24" width="24" />
+              </g>
+              <g>
+                <path d="M11.07,12.85c0.77-1.39,2.25-2.21,3.11-3.44c0.91-1.29,0.4-3.7-2.18-3.7c-1.69,0-2.52,1.28-2.87,2.34L6.54,6.96 C7.25,4.83,9.18,3,11.99,3c2.35,0,3.96,1.07,4.78,2.41c0.7,1.15,1.11,3.3,0.03,4.9c-1.2,1.77-2.35,2.31-2.97,3.45 c-0.25,0.46-0.35,0.76-0.35,2.24h-2.89C10.58,15.22,10.46,13.95,11.07,12.85z M14,20c0,1.1-0.9,2-2,2s-2-0.9-2-2c0-1.1,0.9-2,2-2 S14,18.9,14,20z" />
+              </g>
+            </svg>
+          </span>
+        </p>
         <ul>
           <li>Can I redeem my FB before the original term?</li>
           <li>How do I pay my Credit card bill?</li>
           <li>How can I get my Account Statement?</li>
           <li>What is the tenure of Fixed Depotsit?</li>
         </ul>
-        <button>Start a New Conversation</button>
+        <button className="conversation">
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 0 24 24"
+              width="24px"
+              fill="#000000"
+            >
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path d="M15 4v7H5.17l-.59.59-.58.58V4h11m1-2H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm5 4h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1z" />
+            </svg>
+          </span>
+          <span>Start a New Conversation</span>
+        </button>
       </section>
     </div>
   );
