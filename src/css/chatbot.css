@@ -34,6 +34,13 @@
 
 .container h3{
     margin: 0 0 0.6rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.container h3 svg{
+    fill: white;
+    transform: rotate(-90deg) scale(0.8);
 }
 
 .section-two{
