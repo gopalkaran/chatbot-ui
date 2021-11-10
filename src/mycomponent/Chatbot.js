@@ -1,11 +1,72 @@
-import React from "react";
+import React,{useRef, useEffect} from "react";
 import "../css/chatbot.css";
 
 const Chatbot = ({ toggleWindow }) => {
+  const sectionOneRef = useRef();
+  const sectionOneContainerRef = useRef();
+  const sectionTwoRef = useRef();
+  const robotRef =useRef();
+  const faqRef = useRef();
+  const listOneRef = useRef();
+  const listTwoRef = useRef();
+  const listThreeRef = useRef();
+  const listFourRef = useRef();
+  const conversationRef = useRef();
+
+  useEffect(() => {
+      sectionOneRef.current.style.display = 'none';
+      sectionOneContainerRef.current.style.display = 'none';
+      sectionTwoRef.current.style.display = 'none';
+      robotRef.current.style.display = 'none';
+      faqRef.current.style.display = 'none';
+      listOneRef.current.style.display = 'none';
+      listTwoRef.current.style.display = 'none';
+      listThreeRef.current.style.display = 'none';
+      listFourRef.current.style.display = 'none';
+      conversationRef.current.style.display = 'none';
+    setTimeout(() => {
+      if(sectionOneRef.current)
+      sectionOneRef.current.style.display = 'block';
+    }, 2000);
+    setTimeout(() => {
+      if(sectionOneContainerRef.current)
+      sectionOneContainerRef.current.style.display = 'flex';
+    }, 4000);
+    setTimeout(() => {
+      if(sectionTwoRef.current && robotRef.current && faqRef.current){
+      sectionTwoRef.current.style.display = 'block';
+      robotRef.current.style.display = 'flex';
+      faqRef.current.style.display = 'flex';
+      }
+    }, 6000);
+    setTimeout(() => {
+      if(listOneRef.current)
+      listOneRef.current.style.display = 'flex';
+    }, 8000);
+    setTimeout(() => {
+      if(listTwoRef.current)
+      listTwoRef.current.style.display = 'flex';
+    }, 10000);
+
+    setTimeout(() => {
+      if(listThreeRef.current)
+      listThreeRef.current.style.display = 'flex';
+    }, 12000);
+
+    setTimeout(() => {
+      if(listFourRef.current)
+      listFourRef.current.style.display = 'flex';
+    }, 14000);
+
+    setTimeout(() => {
+      if(conversationRef.current)
+      conversationRef.current.style.display = 'flex';
+    }, 16000);
+  }, [])
   return (
     <div className="chat-window">
-      <section className="section-one">
-        <div className="container">
+      <section className="section-one" ref={sectionOneRef}>
+        <div className="container" ref={sectionOneContainerRef}>
           <h2>
             IRIS
             <span onClick={toggleWindow}>
@@ -42,8 +103,8 @@ const Chatbot = ({ toggleWindow }) => {
         </div>
       </section>
 
-      <section className="section-two">
-        <div className="robot-container">
+      <section className="section-two" ref={sectionTwoRef}>
+        <div className="robot-container" ref={robotRef}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             enable-background="new 0 0 24 24"
@@ -62,7 +123,7 @@ const Chatbot = ({ toggleWindow }) => {
             </g>
           </svg>
         </div>
-        <p>
+        <p ref={faqRef}>
           Frequently Asked Questions
           <span>
             <svg
@@ -83,32 +144,32 @@ const Chatbot = ({ toggleWindow }) => {
           </span>
         </p>
         <ul>
-          <li>
+          <li ref={listOneRef}>
             <span className="outside">
               <span className="inside"></span>
             </span>
             Can I redeem my FB before the original term?
           </li>
-          <li>
+          <li ref={listTwoRef}>
             <span className="outside">
               <span className="inside"></span>
             </span>
             How do I pay my Credit card bill?
           </li>
-          <li>
+          <li ref={listThreeRef}>
             <span className="outside">
               <span className="inside"></span>
             </span>
             How can I get my Account Statement?
           </li>
-          <li>
+          <li ref={listFourRef}>
             <span className="outside">
               <span className="inside"></span>
             </span>
             What is the tenure of Fixed Depotsit?
           </li>
         </ul>
-        <button className="conversation">
+        <button className="conversation" ref={conversationRef}>
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
