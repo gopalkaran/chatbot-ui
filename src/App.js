@@ -3,6 +3,8 @@ import './App.css';
 import Chatbot from "./mycomponent/Chatbot";
 import ChatbotInactive from "./mycomponent/ChatbotInactive";
 import Header from "./mycomponent/Header";
+import Footer from "./mycomponent/Footer";
+import Main from "./mycomponent/Main";
 
 function App() {
   const [window, setWindow] = useState(false);
@@ -17,6 +19,8 @@ function App() {
        <Chatbot toggleWindow={toggleWindow} /> :
        <ChatbotInactive toggleWindow={toggleWindow} />
       }
+      <Main />
+      <Footer />
     </div>
   );
 }
