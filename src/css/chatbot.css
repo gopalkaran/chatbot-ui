@@ -180,3 +180,11 @@
     transform: scale(0.7);
     fill: #4B5563;
 }
+
+
+@media only screen and (max-width: 450px) { 
+    .chat-window{
+        right: 0;
+        width: 100%;
+    }
+}

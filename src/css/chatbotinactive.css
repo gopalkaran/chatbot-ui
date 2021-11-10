@@ -14,3 +14,10 @@
     cursor: pointer;
     box-shadow: 0 0 10px 5px #E5E7EB;
 }
+
+@media only screen and (max-width: 450px) { 
+    .chat-inactive{
+        right: 0;
+        width: 100%;
+    }
+}
