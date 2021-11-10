@@ -186,5 +186,34 @@
     .chat-window{
         right: 0;
         width: 100%;
+        height: 90%;
+        grid-template-columns: 1fr 90% 1fr;
+        grid-template-rows: 30% 16% 50%;
     }
+
+    .section-two > p{
+        font-size: 0.9rem;            
+    }
+
+    .section-two > p svg{
+        transform: scale(0.7);
+    }
+
+    .section-two .conversation{
+        font-size: 0.8rem;
+        width: 80%;
+        margin-top: 0.8rem;
+        padding: 0.3rem;
+    }
+    .section-two .conversation svg{
+        transform: scale(0.6);
+    }
+}
+
+@media only screen and (max-height: 570px) { 
+    .chat-window{
+        height: 100%;
+        grid-template-rows: 32% 14% 50%;
+    }
+
 }
